@@ -71,13 +71,25 @@ De videotutorials van [R for Corpus Linguistics](https://www.youtube.com/channel
 
 Deze collegeplanning wordt onder voorbehoud aangeboden en kan tijdens het semester nog gewijzigd worden. 
 
-(nog aan te vullen)
+* 1/10:  Inleiding en corpuslinguïstisch onderzoek
+* 8/10:  Inleiding R; Vectoren
+* 15/10: Dataframe, subsetting en data importeren
+* 22/10: Zoeken in en omgaan met tekst
+* 29/10: Frequentielijsten, concordanties en collocaties
+* 5/11:  Data opschonen en manipuleren
+* 12/11: Capita selecta
+* 19/11: Geen college (St. V)
+* 26/11: Capita selecta
+* 3/12:  Resultaten verkennen (1)
+* 10/12: Resultaten verkennen (2)
+* 17/12: Geen college - zelfstandig werk en afspraken
+* 24/12: Geen college - zelfstandig werk en afspraken
 
 ###  Aanwezigheid, voorbereiding en participatie
 
 Aanwezigheid in de colleges is noodzakelijk om de gebruikte methodes en technieken te leren kennen en beheersen. Van de aanwezige studenten wordt bovendien verwacht dat ze actief deelnemen aan het college. Dat houdt niet alleen betrokkenheid en participatie tijdens het college zelf in, maar veronderstelt ook dat studenten elke week de nodige voorbereidingen thuis treffen: lesmateriaal zelfstandig doornemen, en opdrachten voorbereiden. Studenten die niet meewerken in het college of die op een andere manier de orde verstoren zal de toegang tot het college ontzegd worden, overeenkomstig het Tuchtreglement voor studenten van de Vrije Universiteit Brussel.
 
-Afwezigheid op een examenonderdeel dient schriftelijk te worden gemeld bij de titularis en het secretariaat van de faculteit (faclw@vub.ac.be), en om als gewettigd afwezig te kunnen worden beschouwd dient een bewijs van overmacht, medische, familiale of gerechtelijke redenen voor afwezigheid te worden voorgelegd aan het faculteitssecretariaat. Conform het facultaire Onderwijs- en Examenreglement beslist de examinator over de mogelijkheid om een nieuwe examenregeling te kunnen treffen binnen de huidige zittijd, dan wel over een uitstel naar een volgende zittijd. Afwezigheid voor een college dient niet te worden gemeld. 
+Afwezigheid op een examenonderdeel dient schriftelijk te worden gemeld bij de titularis en het secretariaat van de faculteit (` faclw@vub.ac.be`), en om als gewettigd afwezig te kunnen worden beschouwd dient een bewijs van overmacht, medische, familiale of gerechtelijke redenen voor afwezigheid te worden voorgelegd aan het faculteitssecretariaat. Conform het facultaire Onderwijs- en Examenreglement beslist de examinator over de mogelijkheid om een nieuwe examenregeling te kunnen treffen binnen de huidige zittijd, dan wel over een uitstel naar een volgende zittijd. Afwezigheid voor een college dient niet te worden gemeld. 
 
 
 ### Evaluatie en quotering
