@@ -96,7 +96,7 @@ Afwezigheid op een examenonderdeel dient schriftelijk te worden gemeld bij de ti
 
 #### Onderzoekspaper (80% van het eindcijfer)
 
-##### Algemeen
+##### Algemeen 
 
 De studenten integreren de aangereikte inzichten, methodes en vaardigheden in een beperkt eigen empirisch corpusonderzoek, waarover ze in een onderzoekspaper uitgebreid rapporteren. In een overleg met de docent kiezen ze hiervoor een variatielinguïstisch onderwerp en werken ze een plan uit voor een bescheiden corpusstudie. Studenten kunnen hierbij desgewenst voortbouwen op of aansluiten bij het onderwerp waarover ze in de eerdere colleges Nederlandse taalkude reeds een literatuurstudie of een verkennend onderzoek hebben verricht. De studenten rapporteren in de loop van het semester over de voortgang van hun onderzoek. [cf. leersdoelstellingen 1, 2, 3, 4, 5]
 
