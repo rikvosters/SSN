@@ -564,7 +564,7 @@ babynames %>%
     tally()
 
 
-#### --- | exercise: shark attacks ---####
+### Oefening: Oefening: shark attacks -----
 
 # Laad de dataset over haaienaanvallen in van het internet met de read.csv-code hieronder. Bekijk de gegevens en probeer volgende vragen te beantwoorden, aan de hand van het basispakket R of met tidyverse/dplyr:
 # - Hoeveel mensen zijn in 2017 gestorven na een aanval van een haai?
