@@ -268,22 +268,23 @@ read.csv("erren.txt", sep="\t", header=F)
 
 # Methode 2: Spreadsheets rechtstreeks inladen -----
 
-# Toch kunnen we spreadsheetbestanden ook rechtstreeks in R inladen. We maken daarvoor gebruik van het `xlsx`-pakket, aangezien deze functionaliteit niet standaard in R aanwezig is. Als je het pakket voor het eerst op een computer gebruikt, moet je het (met een werkende internetverbinding) eerst even installeren met de functie `install.packages()` -- dit is echter een eenmalige handeling.
-install.packages("xlsx") # eenmalig - enkel de eerste keer
+# Toch kunnen we spreadsheetbestanden ook rechtstreeks in R inladen. We maken daarvoor gebruik van het `readxl`-pakket, aangezien deze functionaliteit niet standaard in R aanwezig is. Als je het pakket voor het eerst op een computer gebruikt, moet je het (met een werkende internetverbinding) eerst even installeren met de functie `install.packages()` -- dit is echter een eenmalige handeling.
+install.packages("readxl") # eenmalig - enkel de eerste keer
 
 # Nadat het pakket geïnstalleerd is, moet je het voor gebruik steeds inladen met de functie `library()`. In tegenstelling tot het installeren van het pakket, moet je deze handeling wel iedere keer uitvoeren voordat je een functie uit het `xlsl`-pakket kan gebruiken.
-library(xlsx)
+library(readxl)
 
-# Eenmaal het pakket is ingeladen, kan je de functie `read.xlsx()` gebruiken om een Excel-document uit je werkmap in te laden. Als argument dien je aan te geven uit welk werkblad de in te lezen data moeten worden genomen -- meestal is dat gewoon het eerste werkblad (`sheetIndex=1`).
-erren2 <- read.xlsx("erren.xlsx", sheetIndex=1) # zie ?read.xlsx() voor meer opties
+# Eenmaal het pakket is ingeladen, kan je de functie `read.xlsx()` gebruiken om een Excel-document uit je werkmap in te laden. 
+erren2 <- read_excel("erren.xlsx") # zie ?read_excel() voor meer opties
 erren2
 
 # Deze methode is eenvoudiger dan de voorgaande methode met tekstbestanden, maar er duiken soms wel fouten in op: het kan voorvallen dat er bijvoorbeeld een extra, lege kolom vol `NA`-waardes aan het ingeladen databestand wordt toegevoegd. In dat geval is het beter om methode 1 toe te passen.
 
+# Merk op dat deze functie de data inlaadt als 'tibble'. Dat is een (iets gebruiksvriendelijkere) variant van een dataframe, vooral gebruikt binnen Tidyverse (zie later)
 
 # Methode 3: de importeerfunctie in RStudio -----
 
-# RStudio biedt je eveneens een grafische interface om bestanden te importeren, waarbij je met een 'point-and-click'-aanpak diverse opties en instellingen kan aanpassen. Om hiervan gebruik te maken klik je op: `Tools` > `Import dataset` > `From text file` (zie screenshot in syllabus). De in dit menu aanwezige opties (encoding, heading, row names, enz.) komen overeen met de optionele argumenten van de functies `read.csv` en `read.table`. Zie de helpfunctie voor meer informatie. Deze methode gaat, net als methode 1, uit van rekenbladen die als tekstbestand zijn opgeslagen. Als je problemen hebt met het gebruikte bestandsformaat of de karakterencodering, is dit de veiligste optie.
+# RStudio biedt je eveneens een grafische interface om bestanden te importeren, waarbij je met een 'point-and-click'-aanpak diverse opties en instellingen kan aanpassen. Om hiervan gebruik te maken klik je op: `File` > `Import dataset` > `From text (Base)` (zie screenshot in syllabus) of `File` > `Import dataset` > `From Excel`. De in dit menu aanwezige opties (encoding, heading, row names, enz.) komen overeen met de optionele argumenten van de functies `read.csv` en `read_excel`. Zie de helpfunctie voor meer informatie. 
 
 
 ## Structuur van een dataframe -----
@@ -424,3 +425,151 @@ voorbeeldlijst # toon lijst
 # We zien dat de lijst dus eigenlijk de drie samengevoegde vectoren op twee niveaus combineert. Op een eerste niveau vinden we de namen van de drie vectoren in kwestie: `$Werkwoorden`, `$Scores`, `$Familienamen`. Op een tweede niveau vinden we binnen elk van deze drie vectoren hun respectievelijke waardes: `lijken`, `wrijven`, `bezwijken`, enz. voor de vector `$Werkwoorden`; `0,128`, `0,842`, `0,857` enz. voor de vector `$Scores`; en `Peeters`, `Janssens`, `Maes`, enz. voor de vector `$Familienamen`.
 
 # Je merkt ook op dat niet elke vector binnen de lijst evenveel elementen bevat: er zijn 24 werkwoorden, maar slechts 11 scores en 10 familienamen. In een dataframe is dit niet toegestaan: daar moet elke kolom in de structuur even lang zijn. Lijsten zijn dus iets versatieler dan dataframes, maar wel minder overzichtelijk.
+
+
+### Een alternatieve aanpak: tidyverse/dplyr -----
+
+# 'new kid on the block': tidyverse (tidyverse.org)
+# populaire set van packages (dplyr, ggplot, tidyr, ... )
+# sneller om mee van start te gaan, maar soms wat omslachtiger
+# 'tidy' data:
+#    1. elke kolom is een variabele
+#    2. elke rij is een observatie
+
+library(tidyverse)
+library(babynames) # voor voorbeelden
+
+# Enkele innovaties:
+
+# 1. Tibbles i.p.v. dataframes
+bb <- babynames
+bb
+
+# sneller en gebruiksvriendelijker; toont altijd 10 cases en enkele kolommen (niet volledig!)
+# om meer te zien:
+print(bb, n = 50)
+
+# van dataframe naar tibble:
+erren_tibble <- tibble(erren)
+erren_tibble
+
+# en terug
+data.frame(erren)
+erren
+
+# 2. Pipe character %>%
+
+# maak nieuwe data aan als voorbeeld
+wordcounts <- rnorm(100, mean = 180, sd = 40)
+
+# %>% zorgt voor sequentiële code, eerder dan ingebedde functies (CMD/CTRL + shift + M)
+
+wordcounts %>%
+    sort() %>%
+    plot()
+# idem als:
+plot(sort(wordcounts))
+
+round(mean(babynames$n))
+# idem als:
+babynames$n %>% # CTRL/CMD + SHIFT + M
+    mean() %>%
+    round()
+
+# 3. 'Plying' data (dplyr)
+
+# filter(): vergelijkbaar met subsets
+# selecteren observaties (rijen) o.b.v. waardes
+
+babynames %>%
+    filter(name == "Dwight")
+
+babynames %>%
+    filter(name == "Dwight") %>%
+    filter(sex == "M")
+
+# vaak input voor een plot (ggplot: zie later)
+babynames %>%
+    filter(name == "Dwight") %>%
+    filter(sex == "M") %>%
+    ggplot(aes(x = year, y = prop)) +
+    geom_line()
+
+# flexibeler in gebruik (bijv. inbedding reguliere expressies, zie later)
+babynames %>%
+    filter(str_detect(name, "Adol")) %>%
+    filter(sex == "F")
+
+# mutate(): nieuwe variabelen (kolommen) aanmaken
+
+babynames %>%
+    mutate(prop_overall = n / sum(n))
+
+babynames %>%
+    mutate(name_gendered = paste0(name, "_", sex))
+
+# opslaan nieuwe/aangepaste tibble:
+
+babynames %>%
+    mutate(prop_overall = n / sum(n)) -> babynames
+
+# of:
+babynames <- babynames %>%
+    mutate(prop_overall = n / sum(n))
+
+# select(): selecteer variabelen (kolommen)
+
+babynames %>%
+    select(year, sex, name)
+
+# arrange(): sorteer / volgorde observaties (rijen)
+
+babynames %>%
+    filter(year == 1950) %>%
+    arrange(name, sex)
+
+babynames %>%
+    filter(year == 1950) %>%
+    arrange(desc(name), sex)
+
+# combineer diverse dplyr-functies
+
+# populairste jongensnaam in 1945
+babynames %>%
+    filter(year == 1945) %>%
+    filter(sex == "M") %>%
+    arrange(desc(prop))
+
+# populariteit 'Adolf'
+babynames %>%
+    filter(name == "Adolf") %>%
+    filter(sex == "M") %>%
+    ggplot(aes(x = year, y = prop)) +
+    geom_line() +
+    geom_vline(xintercept = 1940, color = "red")
+
+# tally(): telt hoeveel observaties na filter (vgl. length())
+
+babynames %>%
+    filter(str_detect(name, "Adol")) %>%
+    filter(sex == "F") %>%
+    select(name) %>%
+    unique()
+
+babynames %>%
+    filter(str_detect(name, "Adol")) %>%
+    filter(sex == "F") %>%
+    select(name) %>%
+    unique() %>%
+    tally()
+
+
+#### --- | exercise: shark attacks ---####
+
+# Laad de dataset over haaienaanvallen in van het internet met de read.csv-code hieronder. Bekijk de gegevens en probeer volgende vragen te beantwoorden, aan de hand van het basispakket R of met tidyverse/dplyr:
+# - Hoeveel mensen zijn in 2017 gestorven na een aanval van een haai?
+# - Controleer of er gedurende de tien jaar voor de film Jaws uitkwam in 1975 meer aanvallen door haaien voorkwamen in vergelijking met de tien jaar erna? 
+# - Hoe oud was het oudste Australische dodelijke slachtoffer?
+# - Extraheer de namen van alle Nieuw-Zeelandse slachtoffers van aanvallen door haaien in de 20ste eeuw, maar wel enkel slachtoffers jonger dan 16.
+shark <- read.csv("SharkAttacks.csv", sep = "\t", quote = "")
+shark <- read.csv("https://raw.githubusercontent.com/rikvosters/Basics-in-R/master/SharkAttacks.csv", sep = "\t", quote = "")
