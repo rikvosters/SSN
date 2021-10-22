@@ -277,7 +277,7 @@ grep("aardappel(en|s)?", vekkie, value=TRUE, ignore.case=TRUE)
 # gr.t              | `grot`, `grut`, `gr t`, `gr!t`, … (maar niet: `groot`, `grt`, …)
 # al(zo|dus|weer)   | `alzo`, `aldus`, `alweer` (maar niet: `al`, `alvorens`, `weeral`, …)
 # [a-z]             | `a`, `b`, `c`, …, `z` (maar niet: `A`, `?`, `_`, …)
-# [a-zA-z]          | `a`, `b`, `c`, …, `z`, `A`, `B`, `C`, …, `Z`
+# [a-zA-z]          | `a`, `b`, `c`, …, `z`, `A`, `B`, `C`, …, `Z` 
 # H[0-9]O           | `H0O`, `H1O`, `H2O`, …, `H9O` (maar niet: `HO`, `HHO`, …)
 # b[^oa]s           | `bes`, `bis`, `bbs`, `b1s`, `bês`, … (maar niet: `bos`, `bas`, `bijs`, `bies`, `bs`, …)
 # b[ao][ao]s        | `baas`, `boos`, `baos` en `boas` (maar niet: `bas` of `bos`)
