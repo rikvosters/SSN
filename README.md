@@ -79,7 +79,7 @@ Deze collegeplanning wordt onder voorbehoud aangeboden en kan tijdens het semest
 * 12/11: Frequentielijsten, concordanties en collocaties
 * 19/11: Geen college (St. V)
 * 26/11: Data opschonen en manipuleren
-* 3/12:  Resultaten verkennen (1)
+* 3/12:  Resultaten verkennen (1) (!)
 * 10/12: Resultaten verkennen (2)
 * 17/12: Geen college - zelfstandig werk en afspraken
 * 24/12: Geen college - zelfstandig werk en afspraken
