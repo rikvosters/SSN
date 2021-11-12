@@ -71,15 +71,14 @@ De videotutorials van [R for Corpus Linguistics](https://www.youtube.com/channel
 
 Deze collegeplanning wordt onder voorbehoud aangeboden en kan tijdens het semester nog gewijzigd worden. 
 
-* 1/10:  Inleiding en corpuslinguïstisch onderzoek
-* 8/10:  Inleiding R; Vectoren
-* 15/10: Dataframe, subsetting en data importeren
-* 22/10: Zoeken in en omgaan met tekst
-* 29/10: Frequentielijsten, concordanties en collocaties
-* 5/11:  Data opschonen en manipuleren
-* 12/11: Capita selecta
+* 8/10:  Inleiding en corpuslinguïstisch onderzoek
+* 15/10: Inleiding R; Vectoren
+* 22/10: Dataframe, subsetting en data importeren
+* 29/10: Dataframe, subsetting en data importeren / Zoeken in en omgaan met tekst
+* 5/11:  Zoeken in en omgaan met tekst
+* 12/11: Frequentielijsten, concordanties en collocaties
 * 19/11: Geen college (St. V)
-* 26/11: Capita selecta
+* 26/11: Data opschonen en manipuleren
 * 3/12:  Resultaten verkennen (1)
 * 10/12: Resultaten verkennen (2)
 * 17/12: Geen college - zelfstandig werk en afspraken
