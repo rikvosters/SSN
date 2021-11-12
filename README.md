@@ -54,7 +54,8 @@ Ook kunnen de studenten voor aanvullende informatie terugvallen op de relevante 
 
 Verder kunnen ook de videotutorials van [R for Corpus Linguistics](https://www.youtube.com/channel/UCI938w5QhYrCcrv_i_dzT_Q) een nuttige aanvulling zijn voor aanvullende zelfstudie of herhaling van de basisconcepten.
 
-Het aanvullende studiemateriaal wordt wekelijks aangeboden via een speciaal voorziene [Github-pagina](https://github.com/rikvosters/SSN). 
+Het aanvullende studiemateriaal wordt wekelijks aangeboden via een speciaal voorziene [Github-pagina](https://github.com/rikvosters/SSN), en (voor hoofdstukken 5, 6 en 7) via Canvas. 
+
 Typ- of andere fouten in het lesmateriaal mogen steeds gemeld worden via: <http://www.rikvosters.be/errata>.
 
 ### Syllabus
