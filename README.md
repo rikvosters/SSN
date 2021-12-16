@@ -147,7 +147,7 @@ De paper omvat minstens:
 
 De paper telt minimaal 2500 woorden (ca. 6-7 pagina’s) en maximaal 3500 woorden (ca. 9-10 pagina’s), exclusief codebestand en andere bijlages. Het aantal woorden wordt op de titelpagina vermeld.
 
-De hierboven vermelde deadline geldt zowel voor de digitale als voor de afgedrukte versie: een indiening is pas op tijd en volledig als zowel de digitale als de papieren versie op tijd werden ingediend. Late indieningen worden tot 48 uur na de deadline aanvaard, al moet de digitale versie bij een late indiening dan wel per e-mail worden ingediend. Voor een indiening tot 24 uur na de deadline wordt het behaalde deelcijfer met 15% verminderd, en voor een indiening tussen 24 en 48 uur na de deadline wordt het behaalde deelcijfer met 30% verminderd. Indieningen die meer dan 48 uur na de deadline worden ontvangen, worden niet gequoteerd en worden als afwezigheidscijfers ingevoerd. 
+Late indieningen worden tot 48 uur na de deadline aanvaard, al moet de digitale versie bij een late indiening dan wel per e-mail worden ingediend. Voor een indiening tot 24 uur na de deadline wordt het behaalde deelcijfer met 15% verminderd, en voor een indiening tussen 24 en 48 uur na de deadline wordt het behaalde deelcijfer met 30% verminderd. Indieningen die meer dan 48 uur na de deadline worden ontvangen, worden niet gequoteerd en worden als afwezigheidscijfers ingevoerd. 
 
 Studenten kunnen slechts deelnemen aan het mondelinge examen als ze een paper hebben ingediend. Studenten die een paper indienen maar niet deelnemen aan het mondeling examen zullen een afwezigheidscijfer bekomen voor het opleidingsonderdeel als geheel.
 
