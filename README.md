@@ -128,7 +128,9 @@ Formeel
 
 ##### Praktische afspraken
 
-De paper dient zowel digitaal (Canvas) als op papier (bij het faculteitssecretariaat C.5.403b) te worden ingeleverd, met als deadline 13 januari om 15:00 uur. Bij de papieren versie dient enkel het zelf gemaakte codebestand als bijlage afgedrukt te worden gevoegd. Bij de digitale versie worden zowel het codebestand (in .R-formaat) en alle gegenereerde databestanden en spreadsheets met resultaten (bijv. in .xlsx-, .txt- of .csv-formaat) gevoegd. Bij voorkeur wordt de paper in pdf-formaat samen met deze bijlages samen in één [zip-bestand](http://www.webwijzer.nl/software/zip-bestand-maken.html) via Canvas ingeleverd. 
+De paper dient enkel digitaal (Canvas) te worden ingeleverd. *De deadline voor de paper is 13 januari om 15:00 uur, maar zij die kiezen voor het examenmoment op 11 januari, moeten de paper reeds op 7 januari om 15:00 uur inleveren*. 
+
+Bij de ingediende versie worden zowel het codebestand (in .R-formaat) en alle gegenereerde databestanden en spreadsheets met resultaten (bijv. in .xlsx-, .txt- of .csv-formaat) gevoegd. Bij voorkeur wordt de paper in pdf-formaat samen met deze bijlages samen in één [zip-bestand](http://www.webwijzer.nl/software/zip-bestand-maken.html) via Canvas ingeleverd. 
 
 De paper wordt opgemaakt in een neutrale, wetenschappelijke opmaak, met een eenvoudig en leesbaar lettertype, interlinie 1,2 met uitgelijnde tekst en met genummerde pagina’s. 
 
